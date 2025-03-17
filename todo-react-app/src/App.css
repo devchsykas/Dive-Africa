@@ -1,0 +1,108 @@
+/* Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap");
+
+/* Variables */
+:root {
+  /* Colors */
+  --bg-color: #ffffff;
+  --primary-color: #f6f6f6;
+  --text-color: #212121;
+  --button-bg-color: #0e1e55;
+  --button-text-color: #ffffff;
+  --circle-border-color: #2acc76;
+  /* Fonts */
+  --font-lora: "Lora", serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-lora);
+  font-weight: 400;
+  font-size: 1rem;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.todo-container {
+  max-width: 800px;
+  padding: 2rem;
+  background-color: var(--primary-color);
+  border-radius: 1rem;
+  border: 1px solid rgb(193, 191, 191);
+}
+
+.todo-title {
+  margin-bottom: 2rem;
+  text-align: center;
+  font-weight: 700;
+  font-size: 2rem;
+}
+
+.todo-input-container {
+  display: flex;
+  gap: 0.625rem;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+.todo-input {
+  background-color: var(--bg-color);
+  border: none;
+  border-radius: 0.625rem;
+  padding: 0.5rem 1rem;
+}
+
+.todo-input::placeholder {
+  color: rgba(191, 190, 190, 0.7);
+  font-size: 0.9rem;
+}
+
+.todo-add-btn {
+  background-color: var(--button-bg-color);
+  color: var(--button-text-color);
+  border: none;
+  border-radius: 0.5rem;
+  padding: 0.625rem 1.25rem;
+  cursor: pointer;
+}
+
+.todo-list-container {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.todo-list-title {
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 1.25rem;
+  margin-bottom: 0.625rem;
+}
+
+.todo-list {
+  list-style-type: none;
+}
+
+.todo-list-item {
+  background-color: var(--bg-color);
+  border: none;
+  border-radius: 0.625rem;
+  padding: 0.5rem 1rem;
+  margin-bottom: 0.625rem;
+  font-size: 1.125rem;
+  font-weight: 500;
+}
+
+.fa-regular.fa-circle {
+  color: var(--circle-border-color);
+  margin-right: 0.625rem;
+}
