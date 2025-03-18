@@ -51,7 +51,7 @@ function App() {
             value={inputValue}
             onChange={handleInputChange}
           ></Input>
-          <Button className="todo-add-btn" onClick={handleAddTask}></Button>
+          <Button onClick={handleAddTask}></Button>
         </div>
         <div className="todo-list-container">
           <h3 className="todo-list-title">today's tasks</h3>
