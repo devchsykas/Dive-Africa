@@ -1,31 +1,14 @@
-import React, { useState } from "react";
+import React from "react";
 
-const List = () => {
-  const [tasks, setTasks] = useState("");
-
-  const handleClickTaskItem = () => {
-    const newTasks = [...tasks];
-    newTasks.push("");
-    setTasks(newTasks);
-  };
-
+const List = ({ tasks }) => {
   return (
-    <div>
-      <ul>
-        {tasks.map((task, index) => {
-          return (
-            <li
-              key={index}
-              onClick={() => {
-                handleClickTaskItem(task);
-              }}
-            >
-              {task}
-            </li>
-          );
-        })}
-      </ul>
-    </div>
+    <ul className="todo-list">
+      {tasks.map((task, index) => (
+        <li key={index} className="todo-list-item">
+          <i className="fa-regular fa-circle"></i> {task}
+        </li>
+      ))}
+    </ul>
   );
 };
 
