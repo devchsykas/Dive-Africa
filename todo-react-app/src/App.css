@@ -61,6 +61,11 @@ body {
   padding: 0.5rem 1rem;
 }
 
+.todo-input:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px var(--button-bg-color);
+}
+
 .todo-input::placeholder {
   color: rgba(191, 190, 190, 0.7);
   font-size: 0.9rem;
@@ -98,7 +103,7 @@ body {
   border-radius: 0.625rem;
   padding: 0.5rem 1rem;
   margin-bottom: 0.625rem;
-  font-size: 1.125rem;
+  font-size: 1rem;
   font-weight: 500;
 }
 

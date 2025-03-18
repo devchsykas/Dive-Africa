@@ -16,7 +16,8 @@ import "./App.css";
 
 function App() {
   const [inputValue, setInputValue] = useState("");
-  const [tasks, setTasks] = useState([]);
+  const [tasks, setTasks] = useState(["Check emails", "Review code"]);
+  // const [tasks, setTasks] = useState([]);
 
   /**
    * Handles changes to the input field value.
@@ -46,7 +47,7 @@ function App() {
         <h1 className="todo-title">ToDo List App</h1>
         <div className="todo-input-container">
           <Input
-            placeholder="Enter"
+            placeholder="Enter task"
             value={inputValue}
             onChange={handleInputChange}
           ></Input>
